@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stream</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      /* Clean, compact monospace font stack */
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      font-size: 12px;
+      line-height: 1.4;
+      color: #111;
+      background-color: #fff;
+      padding: 1rem 1rem 4rem 1rem;
+      max-width: 480px; /* Narrow column reads fast like a running log */
+    }
+
+    /* Minimal timestamp / entry markers */
+    .time {
+      color: #888;
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+
+    /* Paragraphs read as continuous entries */
+    p {
+      margin-bottom: 0.6rem;
+      word-break: break-word;
+    }
+
+    /* Inline images embed tightly into the text stream */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0.6rem 0;
+    }
+
+    /* Bare links */
+    a {
+      color: #111;
+    }
+  </style>
+</head>
+<body>
+
+  <p><span class="time">10:14</span>started walking early today before the heat settled in. everything looks washed out in the morning light.</p>
+
+  <p><span class="time">10:18</span>need to remember to check the roof gutter before it rains later this week. left a note somewhere on the desk but cannot find it now.</p>
+
+  <!-- Image sits directly inline between entries -->
+  <img src="photo.jpg" alt="stream entry image">
+
+  <p><span class="time">11:02</span>a quick thought about structure: when you remove padding and borders, the text density naturally forces you to read faster. it feels more like thinking out loud than publishing something polished.</p>
+
+  <p><span class="time">11:45</span>coffee went cold. reading back through old notes from last month and half of them don't make sense anymore without context.</p>
+
+  <p><span class="time">13:20</span>another entry here. just keep appending paragraphs to the bottom of the file as thoughts come to you.</p>
+
+</body>
+</html>
